@@ -31,6 +31,7 @@ struct Orange: View {
             .background(Color.purple)
             .cornerRadius(10)
         }
+        .navigationTitle("Orange View")
     }
 }
 

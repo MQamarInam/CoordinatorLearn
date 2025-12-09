@@ -13,14 +13,6 @@ struct Lemon: View {
     
     var body: some View {
         VStack {
-            Button("Show Olive") {
-                coordinator.present(fullScreenCover: .Olive)
-            }
-            .padding()
-            .bold()
-            .foregroundStyle(Color.white)
-            .background(Color.purple)
-            .cornerRadius(10)
             
             Button("Dismiss") {
                 coordinator.dismissSheet()
@@ -31,6 +23,7 @@ struct Lemon: View {
             .background(Color.purple)
             .cornerRadius(10)
         }
+        .navigationTitle("Lemon View")
     }
 }
 

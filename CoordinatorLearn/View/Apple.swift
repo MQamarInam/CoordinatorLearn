@@ -30,6 +30,25 @@ struct Apple: View {
             .foregroundStyle(Color.white)
             .background(Color.purple)
             .cornerRadius(10)
+            
+            Button("Show Lemon") {
+                coordinator.present(sheet: .Lemon)
+            }
+            .padding()
+            .bold()
+            .foregroundStyle(Color.white)
+            .background(Color.purple)
+            .cornerRadius(10)
+            
+            Button("Show full Olive") {
+                coordinator.present(fullScreenCover: .Olive)
+            }
+            .padding()
+            .bold()
+            .foregroundStyle(Color.white)
+            .background(Color.purple)
+            .cornerRadius(10)
+            
         }
         .navigationTitle("Apple View")
     }

@@ -31,6 +31,7 @@ struct Banana: View {
             .background(Color.purple)
             .cornerRadius(10)
         }
+        .navigationTitle("Banana View")
     }
 }
 

@@ -13,14 +13,6 @@ struct Olive: View {
     
     var body: some View {
         VStack {
-            Button("Show Full Lemon") {
-                coordinator.present(sheet: .Lemon)
-            }
-            .padding()
-            .bold()
-            .foregroundStyle(Color.white)
-            .background(Color.purple)
-            .cornerRadius(10)
             
             Button("Dismiss") {
                 coordinator.dismissFullScreenCover()
@@ -31,6 +23,7 @@ struct Olive: View {
             .background(Color.purple)
             .cornerRadius(10)
         }
+        .navigationTitle("Olive View")
     }
 }
 
